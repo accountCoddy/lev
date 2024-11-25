@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: radial-gradient(rgb(253, 131, 131),rgb(179, 179, 247));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.368);
+    width: 400px;
+    height: 640px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(50, 50, 50);
+    padding: 20px;
+    position: relative;
+}
+.title{
+    text-align: center;
+    color: blueviolet;
+    text-shadow: 5px 5px 30px;
+}
+.card-img{
+    width: 100%;
+    position: relative;
+    right: 9px;
+}
+.text{
+    font-size: 20px;
+    color:rgb(84, 29, 107);
+}
+.signathure{
+    font-size: 15px;
+    text-align: right;
+    font-style:italic ;
+    color: rgb(84, 29, 107);
+}
+.heard{
+    width: 30px;
+    height:30px;
+    background-color: rgb(246, 115, 115);
+    position: absolute;
+    rotate: 45deg;
+    right: 10px;
+    top: 10px;
+    scale:0.8;
+
+}
+.heard::before, .heard::after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(246, 115, 115);
+    position: absolute;
+    
+}
+.heard::before{
+    left: -15px;
+}
+.heard::after{
+    top: -15px;
+}
